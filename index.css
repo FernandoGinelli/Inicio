@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.popsicle{
+    
+    width: 150px;
+    height: 230px;
+    border: 2px solid maroon;
+    display: flex;
+    justify-content: center;
+    border-top-left-radius:75px ;
+    border-top-right-radius:75px ;
+    position: relative;
+
+    background: linear-gradient(
+        315deg,
+        red 0%, red 5%,
+        blue 10%, blue 15%,
+        purple 20%, purple 25%,
+        orange 30%, orange 35%,
+        lightblue 40%, lightblue 45%,
+        red 50%, red 55%,
+        blue 60%, blue 65%,
+        purple 70%, purple 75%,
+        orange 80%, orange 85%,
+        lightblue 90%, lightblue 100%
+    );
+    background-size: 200% 200%;
+    animation: popsicle-animation linear 5s infinite;
+}
+
+@keyframes popsicle-animation{
+
+    from {
+        background-position: 0% 0%;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}
+
+.stick{
+    position: absolute;
+    bottom: -80px;
+ 
+    width: 40px;
+    height: 80px;
+    border: 2px solid maroon;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    background-color: rgba(250, 237, 116, 0.856);
+}
